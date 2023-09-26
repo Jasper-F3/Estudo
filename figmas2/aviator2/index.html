@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviators</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 19px;
+        max-width: 800px;
+        height: 2140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      h2 {
+        letter-spacing: 0.5rem;
+      }
+
+      header {
+        background: #fff;
+        width: 100%;
+        display: flex;
+        padding: 1.5rem 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+      #wrapper {
+        background-color: bisque;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.6rem 1rem;
+        background: linear-gradient(180deg, #ffead1 0%, #fff 100%);
+      }
+
+      .pairs {
+        width: 26.4375rem;
+        height: 8.75rem;
+        margin-bottom: 0.8rem;
+      }
+      .img-wrapper {
+        text-decoration: none;
+        color: #01497c;
+        text-align: center;
+        font-family: Georgia;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.6rem 1rem;
+        font-style: italic;
+      }
+      .learn-pair {
+        width: 8.5625rem;
+        height: 8rem;
+      }
+
+      h1 {
+        color: #01497c;
+        text-align: center;
+        font-family: Inter;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+      }
+      h3 {
+        color: #01497c;
+        text-align: center;
+        font-family: Georgia;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 2.5rem */
+        margin-bottom: 1rem;
+      }
+      .description {
+        color: #01497c;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%; /* 1.5rem */
+      }
+      button {
+        display: flex;
+        padding: 1rem 1.875rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border: 2px solid #fccb82;
+        background-color: #ffead1;
+        color: #01497c;
+        text-align: center;
+        font-family: Inter;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      #spacer {
+        height: 1.5rem;
+
+        align-self: stretch;
+      }
+      #learn-more {
+        display: flex;
+        padding: 1.875rem 4.25rem;
+        align-items: center;
+        gap: 2.25rem;
+        align-self: stretch;
+        background: #01497c;
+        height: 10rem;
+        width: 43rem;
+
+        justify-content: center;
+      }
+      .learn-desc {
+        display: flex;
+        padding: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        flex: 1 0 0;
+      }
+      footer {
+        display: flex;
+        padding: 2.875rem 1rem 0rem 1rem;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.625rem;
+      }
+      .icon {
+        width: 3rem;
+        height: 2rem;
+      }
+      .row {
+        display: flex;
+        padding: 0.25rem 1rem;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        justify-content: space-between;
+        margin-top: 1rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h2>WARBY PARKER</h2>
+      </header>
+      <h1>Aviators</h1>
+      <h3>are in season</h3>
+
+      <p class="description">
+        Gazing at the horizon <br />
+        People-watching from a beach chair. <br />
+        Assessing snack aisles at rest stops <br />
+        <br />
+
+        Aviators excel at these essental summer pastimes.
+      </p>
+
+      <button>Shop the silhouette</button>
+      <a class="img-wrapper" href="#"
+        ><img class="pairs" src="./images/pair1.png" alt="" />
+        <p><strong>Brimmer</strong> in Black Walnut</p></a
+      >
+
+      <a class="img-wrapper" href="#"
+        ><img class="pairs" src="./images/pair2.png" alt="" />
+        <p>
+          <strong>Cooper</strong> in Black Oak Tortoise with Polished Gold
+        </p></a
+      >
+
+      <a class="img-wrapper" href="#"
+        ><img class="pairs" src="./images/pair3.png" alt="" />
+        <p><strong>Braden</strong> in Crystal</p></a
+      >
+
+      <a class="img-wrapper" href="#"
+        ><img class="pairs" src="./images/pair4.png" alt="" />
+        <p><strong>Raider</strong> in Brushed Ink with Polished Gold</p></a
+      >
+
+      <a class="img-wrapper" href="#"
+        ><img class="pairs" src="./images/pair5.png" alt="" />
+        <p><strong>Fisher</strong> in Polished Gold</p></a
+      >
+
+      <div id="learn-more">
+        <img class="learn-pair" src="./images/pares.png" alt="" />
+        <div class="learn-desc">
+          <h4
+            style="
+              margin-top: 1.5rem;
+              color: #fff;
+              font-family: Inter;
+              font-size: 1.0625rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.25rem;
+              text-transform: uppercase;
+            "
+          >
+            <strong>ADD A PAIR AND SAVE</strong>
+          </h4>
+          <p
+            style="
+              color: #fff;
+              font-family: Inter;
+              font-size: 1.2rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 1.5rem */
+            "
+          >
+            Get 15% off when you buy two (or more!) pairs of prescription
+            eyeglasses or sunglasses.
+          </p>
+          <br />
+          <a
+            href="#"
+            style="
+              color: #fff;
+              font-family: Inter;
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <footer>
+        <div id="social">
+          <div class="icon-wrapper">
+            <a class="icon" href=""><img src="./images/fb-bw.png" alt="" /></a>
+            <a class="icon" href=""><img src="./images/tw-bw.png" alt="" /></a>
+            <a class="icon" href=""><img src="./images/in-bw.png" alt="" /></a>
+            <a class="icon" href=""><img src="./images/yt-bw.png" alt="" /></a>
+          </div>
+        </div>
+        <p
+          style="
+            color: #697279;
+            text-align: center;
+            font-family: Inter;
+            font-size: 0.6875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.1rem;
+            margin-top: 3.5rem;
+          "
+        >
+          Need help? Call us:
+          <a
+            style="
+              color: #0771a7;
+              font-family: Inter;
+              font-size: 0.6875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration-line: underline;
+            "
+            href=""
+            >888.492.7297</a
+          >, every day, 9 a.m.–10 p.m. ET, or visit our
+          <a
+            style="
+              color: #0771a7;
+              font-family: Inter;
+              font-size: 0.6875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration-line: underline;
+            "
+            href=""
+            >FAQ page</a
+          >.
+        </p>
+      </footer>
+      <div class="row">
+        <p
+          style="
+            color: #0771a7;
+            font-family: Inter;
+            font-size: 0.6875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 1.03125rem */
+            text-decoration-line: underline;
+          "
+        >
+          Find a Warby Parker store near you
+        </p>
+        <p
+          style="
+            color: #777;
+            text-align: right;
+            font-family: Inter;
+            font-size: 0.6875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 1.03125rem */
+            text-decoration-line: underline;
+          "
+        >
+          Learn about Buy a Pair, Give a Pair
+        </p>
+      </div>
+      <div class="row" style="margin-top: 0; border-top: none">
+        <p
+          style="
+            color: #697279;
+            text-align: center;
+            font-family: Inter;
+            font-size: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          "
+        >
+          233 Spring Street, 6th floor East, New York City, NY 10013
+        </p>
+        <p
+          style="
+            color: #4d4d4d;
+            text-align: center;
+            font-family: Inter;
+            font-size: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+          "
+        >
+          Unsubscribe View in the browser
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

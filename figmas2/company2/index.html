@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 600px;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 0.1fr 2fr;
+        gap: 10px;
+      }
+      logo {
+        width: 600px;
+      }
+      .wrapper > div > img {
+        width: 180px;
+        height: 190px;
+      }
+      .yellowf {
+        grid-column: 2/2;
+        grid-row: 3;
+      }
+      .redf {
+        grid-column: 3/3;
+        grid-row: 3;
+      }
+      .whitef {
+        grid-row: 3;
+      }
+      .outono {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / 4;
+        grid-row: 2;
+        color: #0c7147;
+        font-size: 20px;
+        letter-spacing: 5px;
+      }
+      header > a {
+        font-style: normal;
+        text-decoration: none;
+      }
+      .wall1 {
+        background-color: #0c7147;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 25px;
+      }
+      .luxdesc,
+      .luxknow {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .luxdesc > a > p {
+        text-decoration: none;
+        font-style: normal;
+        color: #28815b;
+        font-size: 18px;
+      }
+      .luxdesc > a,
+      .luxknow > a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: #eeeee7;
+        padding: 5px 50px 50px 50px;
+        border-radius: 10px;
+        height: 200px;
+      }
+
+      .luxdesc > a > h2,
+      .luxknow > a > h2 {
+        color: #0c7147;
+      }
+
+      .luxknow > a > p {
+        text-decoration: none;
+        font-style: normal;
+        color: #28815b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 25px;
+      }
+      .luxknow {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .luxknow > a > button {
+        color: #ffffff;
+        background-color: #0c7147;
+        border-radius: 10px;
+        padding: 5px 15px 5px 15px;
+        font-size: 18px;
+      }
+
+      .wall2 {
+        display: flex;
+        padding: 0 0 0 30px;
+        flex-direction: column;
+        background-color: #0c7147;
+        width: 80%;
+        color: white;
+        border-radius: 30px;
+      }
+      .agataimgs {
+        display: flex;
+        margin-top: 20px;
+      }
+      .wall3 {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        background-color: #0c7147;
+        width: 80%;
+        color: white;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <logo>
+        <a href="https://www.madesa.com/">
+          <img src="./imgs/1.png" alt="" />
+        </a>
+      </logo>
+      <header>
+        <a href="https://www.madesa.com/">
+          <div class="wrapper">
+            <div>
+              <img src="./imgs/58611dcfa253607c6fa054da13c1d512.jpg" alt="" />
+            </div>
+            <div>
+              <img
+                src="./imgs/Flor do Cerrado_Brazilian Savannah Flower.jpg"
+                alt=""
+              />
+            </div>
+            <div><img src="./imgs/Flor-Jasmim (1)(1).jpg" alt="" /></div>
+            <div class="outono">
+              <p>PRIMAVERA <strong>DE DESCONTOS</strong> MADESA</p>
+            </div>
+            <div class="yellowf"><img src="./imgs/jpg" alt="" /></div>
+            <div class="redf"><img src="./imgs/jpg(1)" alt="" /></div>
+            <div class="whitef">
+              <img src="./imgs/Turnera subulata - Wikipedia.jpg" alt="" />
+            </div>
+          </div>
+        </a>
+      </header>
+      <div class="wall1">
+        <p>
+          Descontos especiais para você levar <br />
+          <strong>mais beleza para a sua casa</strong> na <br />
+          estação mais florida do ano!
+        </p>
+      </div>
+      <div class="luxdesc">
+        <a href="">
+          <h2><strong>LUX</strong> <br /></h2>
+          <p>
+            Leveza, <br />
+            mordernidade, <br />
+            sofisticação e <br />
+            o espaõ interno <br />
+            que você estava <br />
+            procurando.
+          </p>
+        </a>
+        <div class="luxdescimg">
+          <img src="./imgs/5.png" alt="" />
+        </div>
+      </div>
+      <div class="luxknow">
+        <div class="luxknowimg">
+          <img src="./imgs/6.png" alt="" />
+        </div>
+        <a href="">
+          <p>
+            Conheça toda a <br />
+            <strong>linha Lux</strong>
+          </p>
+          <button>SAIBA MAIS</button>
+        </a>
+      </div>
+      <div
+        class="try"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div class="wall2">
+          <h2>Agata</h2>
+          <p>
+            Perfeita para você realizar o sonho da cozinha nova <br />
+            com muito mais estilo e criatividade
+          </p>
+        </div>
+      </div>
+      <div class="agataimgs">
+        <img src="./imgs/10.png" alt="" />
+        <img src="./imgs/9.png" alt="" />
+      </div>
+      <div
+        class="try"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div class="wall3">
+          <p>
+            Conheça toda a linha <strong> Agata</strong>
+            <button>SAIBA MAIS</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="luxdesc">
+        <a href="">
+          <h2><strong>Nice</strong> <br /></h2>
+          <p>
+            De olho nas provas <br />
+            tendências? <br />
+            Nessa linha você <br />
+            encontra requinte <br />
+            e funcionalidade <br />
+            em um só produto.
+          </p>
+        </a>
+        <div class="luxdescimg">
+          <img src="./imgs/5.png" alt="" />
+        </div>
+      </div>
+      <div class="luxknow">
+        <div class="luxknowimg">
+          <img src="./imgs/6.png" alt="" />
+        </div>
+        <a href="">
+          <p>
+            Conheça toda a <br />
+            <strong>linha Nice</strong>
+          </p>
+          <button>SAIBA MAIS</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
