@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSS Grid starting point</title>
+    <style>
+      body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+      }
+
+      .container > div {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+      }
+
+      .container {
+        display: grid;
+        /*
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        Ao colocar como grid nada vai acontecer então com o grid-template-columns você pode 
+        selecionar quantas colunas quer, pode ser qualquer tipo de valor mas um recomendado 
+        é o fr que seria o espaço disponivel (frame), uma forma de criar varias colunas ou
+        rows em pouco codigo é com repeat((numero de colunas),(valor delas))
+        */
+        grid-template-columns: repeat(3, 1fr);
+        /*
+        grid-auto-rows é utilizado para setar um tamanho para as tracks ou seja o conjunto
+        das celulas, limitando o tamanho delas
+
+        MUITO IMPORTANTE o minmax é muito bom para responsividade podendo adaptar o seu tamanho
+        com a tela e o seu conteudo. 
+        */
+        /*grid-auto-rows: minmax(100px, auto);*/
+
+        /*-----------------------------------------------------------------------------*/
+
+        /*Cara que absurdo, ao utilzar um repeat e um min max junto, nos temos a mais completa e 
+        complexa responsividade onde sera criado colunas a mais caso surja mais conteudo*/
+
+        /*
+        A propriedade grid-template-columns é geralmente usada quando você deseja ter um controle
+        preciso sobre o número e o tamanho das colunas na sua grade. A propriedade grid-auto-columns
+        é geralmente usada quando você deseja que o navegador determine o número e o tamanho das colunas
+        na sua grade, com base no tamanho do contêiner da grade e no tamanho dos itens na grade.
+        */
+
+        grid-auto-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+      <div>Seven</div>
+    </div>
+  </body>
+</html>
