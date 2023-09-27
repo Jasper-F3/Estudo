@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        A propriedade flex-basis do CSS define o tamanho inicial do item flexível na direção principal. O tamanho inicial é o tamanho do item antes que o flex-grow e o flex-shrink entrem em ação.
+        
+        O valor padrão da propriedade flex-basis é auto, o que significa que o tamanho
+        inicial do item é determinado pelo conteúdo do item. Se o valor da 
+        propriedade flex-basis for diferente de auto, o tamanho inicial do 
+        item será definido pelo valor especificado.
+
+        .container {
+        display: flex;
+        }
+
+        .item1 {
+        flex-basis: 200px;
+        }
+        
+        Neste exemplo, o primeiro item flexível terá um tamanho inicial de 200px. 
+        Se o conteúdo do item for menor que 200px, o item será redimensionado 
+        para caber no conteúdo. Se o conteúdo do item for maior que 200px, o item 
+        crescerá de acordo com o valor do flex-grow.
+
+
+
+        */
+      .container {
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .flex {
+        background: #6ab6d8;
+        padding: 10px;
+        margin-bottom: 50px;
+        border: 3px solid #2e86bb;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+      }
+
+      .flex::after {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 100%;
+        margin-top: 10px;
+        width: 100%;
+        color: #333;
+        font-size: 12px;
+      }
+
+      .flex1 {
+        flex-basis: auto;
+      }
+
+      .flex1::after {
+        content: "auto";
+      }
+
+      .flex2 {
+        flex-basis: max-content;
+      }
+
+      .flex2::after {
+        content: "max-content";
+      }
+
+      .flex3 {
+        flex-basis: min-content;
+      }
+
+      .flex3::after {
+        content: "min-content";
+      }
+
+      .flex4 {
+        flex-basis: fit-content;
+      }
+
+      .flex4::after {
+        content: "fit-content";
+      }
+
+      .flex5 {
+        flex-basis: content;
+      }
+
+      .flex5::after {
+        content: "content";
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li class="flex flex1">1: flex-basis test</li>
+      <li class="flex flex2">2: flex-basis test</li>
+      <li class="flex flex3">3: flex-basis test</li>
+      <li class="flex flex4">4: flex-basis test</li>
+      <li class="flex flex5">5: flex-basis test</li>
+    </ul>
+
+    <ul class="container">
+      <li class="flex flex6">6: flex-basis test</li>
+    </ul>
+  </body>
+</html>

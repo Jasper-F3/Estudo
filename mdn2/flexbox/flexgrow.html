@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        The flex-grow CSS property sets the flex grow factor, which specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+        When the flex-container's main size is larger than the combined main size's of
+        the flex items, the extra space is distributed among the flex items, with 
+        each item growth being their growth factor value as a proportion of the 
+        sum total of all the container's items' flex grow factors.
+
+        Quanto maior o numero do flex-grow maior ele vai ser referente ao 
+        espaço livre da box da flex
+
+        */
+      #content {
+        display: flex;
+
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: stretch;
+      }
+
+      .small {
+        flex-grow: 1;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+      }
+
+      .double {
+        flex-grow: 2;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h4>This is a Flex-Grow</h4>
+    <h5>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h5>
+    <div id="content">
+      <div class="small" style="background-color: red">A</div>
+      <div class="small" style="background-color: lightblue">B</div>
+      <div class="small" style="background-color: yellow">C</div>
+      <div class="double" style="background-color: brown">D</div>
+      <div class="double" style="background-color: lightgreen">E</div>
+      <div class="small" style="background-color: brown">F</div>
+    </div>
+  </body>
+</html>
