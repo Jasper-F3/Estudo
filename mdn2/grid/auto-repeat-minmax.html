@@ -50,7 +50,16 @@
         é geralmente usada quando você deseja que o navegador determine o número e o tamanho das colunas
         na sua grade, com base no tamanho do contêiner da grade e no tamanho dos itens na grade.
         */
-
+        /*
+        grid-template-columns: minmax(200px, 500px) 1fr;
+      
+        Neste exemplo, a primeira coluna terá um tamanho mínimo de 200px. Se o conteúdo da coluna for maior do que 
+        200px, a coluna será expandida para acomodar o conteúdo. O tamanho máximo da coluna é 500px. Se o conteúdo da 
+        coluna for maior do que 500px, a coluna será cortada para caber em 500px.
+        A propriedade minmax() também pode ser usada na propriedade grid-auto-columns ou grid-auto-rows para definir 
+        o tamanho das colunas ou linhas de uma grade automática. Por exemplo, a seguinte declaração definiria duas colunas 
+        com um tamanho mínimo de 200px e um tamanho máximo de 500px:
+        */
         grid-auto-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-rows: minmax(100px, auto);
         gap: 20px;
