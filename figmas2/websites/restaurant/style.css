@@ -42,11 +42,15 @@ header {
 #segundos-box {
   border-color: rgb(58, 54, 54);
   border: solid;
-  border-width: 0.5px;
-  border-radius: 15px;
-
+  border-width: 0.04rem;
+  border-radius: 0.36rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   background-color: #1c1e21;
+  max-width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #horas,
 #dias,
@@ -54,7 +58,9 @@ header {
 #segundos {
   font-size: 1.8rem;
 }
-
+.comeca_em {
+  max-width: 100%;
+}
 #comeca-em-texto {
   text-align: start;
 }
@@ -174,20 +180,20 @@ form > p {
   line-height: 1.5rem; /* 150% */
 }
 
-.card-text > h2 {
+.card-body > h2 {
   color: var(--bf-23-crema, #eeeee5);
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.125rem; /* 100% */
 }
 
-.card-text > h3 {
+.card-body > h3 {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 0.875rem; /* 100% */
 }
 
-.card-text > p {
+.card-text {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.375rem; /* 137.5% */
@@ -267,9 +273,107 @@ form > p {
 .faq {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.accordion {
+  width: 19.5rem;
 }
 .accordion-item {
   align-self: center;
-  margin: 0rem 5rem 0rem 5rem;
+  margin: 0rem 0rem 0.2rem 0rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.accordion-header {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  flex: 1 0 0;
+}
+.accordion-button {
+  background: #1c1e21;
+  color: white;
+}
+
+.FAQ-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.FAQ-titulo > h3 {
+  font-size: 1.25rem;
+  line-height: 1.875;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reclame-aqui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem 0 1.5rem;
+  text-align: center;
+}
+.reclame-aqui > h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+.reclame-aqui > p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+.seloreclame {
+  margin-bottom: 1rem;
+}
+.tag-item {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background: var(--bf-23-cinza-escuro, #1c1e21);
+  gap: 0.5rem;
+  color: var(--bf-23-cinza-claro, #393c41);
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem; /* 150% */
+  letter-spacing: -0.015rem;
+}
+.tags-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+#footer > img {
+  width: 7.8rem;
+  height: 7.5rem;
+}
+
+#socials {
+  display: flex;
+  gap: 1rem;
+}
+
+#texto-legal {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
 }
